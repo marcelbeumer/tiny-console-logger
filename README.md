@@ -56,7 +56,7 @@ logger.setReporter((args, methodName, logLevel) => {
 A formatter modifies arguments passed to the reporter. The default formatter just returns arguments as-is, but it's possible to use a custom formatter:
 
 ```ts
-logger.setFormatter(args => [`[prefix]`, ...args]);
+logger.setFormatter(args => ['[prefix]', ...args]);
 ```
 
 Or:
