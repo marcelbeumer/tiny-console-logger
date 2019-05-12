@@ -1,6 +1,6 @@
-# tiny-console-logger [![Build Status](https://travis-ci.org/marcelbeumer/tiny-console-logger.svg?branch=master)](https://travis-ci.org/marcelbeumer/tiny-console-logger) [![NPM Version](https://flat.badgen.net/npm/v/tiny-console-logger/latest)](https://www.npmjs.com/package/tiny-console-logger)
+# tiny-console-logger [![Build status](https://travis-ci.org/marcelbeumer/tiny-console-logger.svg?branch=master)](https://travis-ci.org/marcelbeumer/tiny-console-logger) [![NPM version](https://flat.badgen.net/npm/v/tiny-console-logger/latest)](https://www.npmjs.com/package/tiny-console-logger) [![Bundle size](https://badgen.net/bundlephobia/minzip/tiny-console-logger)](https://bundlephobia.com/result?p=tiny-console-logger)
 
-~0.5kB gzipped super simple console logger with log level, formatter and custom reporter support. Runs in node and the browser, written in TypeScript.
+Small and super simple console logger with log level, formatter and custom reporter support. Runs in node and the browser, written in TypeScript.
 
 ## Installation
 
