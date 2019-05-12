@@ -43,7 +43,7 @@ export default (): Logger => {
   const createMethod = (methodName: keyof LoggingMethods, logLevel: LogLevel) => {
     const levelIndex = levelOrder.indexOf(logLevel);
     return (...args: any[]) => {
-      if (!format || !report || currentLevelIndex > levelIndex) return;
+      if (currentLevelIndex > levelIndex) return;
       report(format(args, methodName, logLevel), methodName, logLevel);
     };
   };
