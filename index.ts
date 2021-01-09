@@ -3,7 +3,7 @@ export enum LogLevel {
   DEBUG = 'debug',
   INFO = 'info',
   WARN = 'warn',
-  ERROR = 'error'
+  ERROR = 'error',
 }
 
 export interface LoggingMethods {
@@ -30,7 +30,7 @@ export interface Reporter {
   (args: any[], methodName: keyof LoggingMethods, logLevel: LogLevel): void;
 }
 
-export const defaultFormatter: Formatter = args => args;
+export const defaultFormatter: Formatter = (args) => args;
 export const defaultReporter: Reporter = (args, methodName) =>
   typeof console !== 'undefined' && console[methodName] && console[methodName](...args);
 
@@ -68,6 +68,6 @@ export default (): Logger => {
     },
     setFormatter(formatter: Formatter) {
       format = formatter;
-    }
+    },
   };
 };
