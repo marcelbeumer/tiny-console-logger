@@ -61,7 +61,9 @@ export default (): Logger => {
       currentLevelIndex = idx;
     },
     getLevel() {
-      return levelOrder[currentLevelIndex];
+      const level = levelOrder[currentLevelIndex];
+      if (!level) throw new Error(`Invalid level set (${level})`);
+      return level;
     },
     setReporter(reporter: Reporter) {
       report = reporter;
