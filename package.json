@@ -1,6 +1,6 @@
 {
   "name": "tiny-console-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Small and super simple console logger with log level, formatter and custom reporter support",
   "main": "index.js",
   "dependencies": {},
